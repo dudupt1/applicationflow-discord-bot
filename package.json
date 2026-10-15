@@ -1,0 +1,15 @@
+{
+  "name": "applicationflow-discord-bot",
+  "version": "1.0.0",
+  "description": "Discord application workflow bot with structured forms, staff review and role assignment.",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "deploy": "node src/deploy-commands.js",
+    "check": "node --check src/index.js && node --check src/deploy-commands.js && node --check src/features/applications.js",
+    "test": "node --test"
+  },
+  "engines": { "node": ">=20.0.0" },
+  "dependencies": { "discord.js": "^14.16.3", "dotenv": "^16.4.5" }
+}
